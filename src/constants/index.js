@@ -1,12 +1,12 @@
 import { facebook, instagram, support, twitter, secure, map, clock,planning,brainstorm,done,execute,monitor,design,} from "../assets/icons";
-import { Levi, Gustav, CESphoto1, CESphoto2, CESphoto3} from "../assets/images";
+import { Levi, Gustav, CESphoto1, CESphoto2, CESphoto3, AI1,AI2,AI3, AI4, AI5} from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#Support", label: "Support" },
+    { href: "#Services", label: "Services" },
+    { href: "#Client", label: "Client" },
 ];
 
 
@@ -98,4 +98,34 @@ export const Images = [
     { src: CESphoto1, alt: "photo1" },
     { src: CESphoto2, alt: "photo2" },
     { src: CESphoto3, alt: "photo3" },
+];
+
+export const ServiceCarousel = [
+    {   title: "Network Design",
+        header: "Network Design",
+        description: " Our specialization lies in crafting customized fiber network designs from A to Z, ensuring they align precisely with the requirements and objectives of our clients.",
+        src: CESphoto2,
+      },
+      { title: "Inventory Management",
+        header: "Network Inventory Management",
+        description: "We are proficient in documenting and capturing the details of fiber network infrastructure, maintaining an accurate and up-to-date inventory for effective management.",
+        src: AI2,
+      },
+      { title: "Systems Design",
+        header: "Software Systems Design and Databases",
+        description: "Leveraging our technical proficiency, we design software systems and databases to streamline operations, enhance efficiency, and facilitate seamless data management",
+        src: AI3,
+      },
+      { title: "Admin Personnel",
+        header: "Dedicated Admin Personnel",
+        description: "Our dedicated admin personnel oversee and coordinate various aspects of project administration to ensure projects are executed smoothly, on time, and within budget.",
+        src: AI4,
+      },
+      { title: "Guidance/Supplier",
+        header: "Material Guidance and Supplier Advisory",
+        description: "Providing valuable insights, we offer guidance on materials and advise on suppliers, ensuring the use of quality materials in the implementation of fiber network projects",
+        src: AI5,
+      },
+
+    
 ];

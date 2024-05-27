@@ -1,18 +1,19 @@
-const SectionInventory = ({ id, title, children, visibleSection, handleMenuItemClick }) => {
-    const isVisible = visibleSection === id;
+import { CESphoto2,AI1 } from "../assets/images";
 
-    return (
-        <div className={`transition-all duration-1000 ease-in-out overflow-hidden ${isVisible ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-            <div className="max-container flex flex-wrap">
-                <div className=" flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16">
-                    <p className="px-2 font-poppins text-black drop-shadow font-bold text-[32px] max-sm:text-[16px] max-sm:leading">
-                    Network Inventory Management
-                    </p>
-                    <p className="p-2 info-text drop-shadow">
-                    We are proficient in documenting and capturing the details of fiber network infrastructure, maintaining an accurate and up-to-date inventory for effective management.                     </p>
-                </div>
-            </div>
-        </div>
-    );
+const SectionInventory = () => {
+
+  return (
+    <>
+      <div className="flex  inset-0  justify-center items-center w-full h-[500px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${AI1})` }}>
+
+      </div>
+      <div className="max-container bg-gradient-to-r from-[#00309e] bg-opacity-30 p-8 rounded-lg text-start">
+        <h2 className="text-4xl text-white font-bold">Network Design</h2>
+        <p className="text-lg  text-white ">Our specialization lies in crafting customized fiber network designs from A to Z, ensuring they align precisely with the requirements and objectives of our clients.</p>
+      </div>
+
+    </>
+
+  );
 };
 export default SectionInventory

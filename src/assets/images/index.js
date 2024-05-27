@@ -13,8 +13,20 @@ import Gustav from './Gustav.png'
 import Levi from './Levi.png'
 import CESLogoWhite from './CESLogoWhite.png'
 import CESLogoBlack from './CESLogoBlack.png'
+import AI1 from './AI-1.jpg'
+import AI2 from './AI-2.jpg'
+import AI3 from './AI-3.jpg'
+import AI4 from './AI-4.jpg'
+import AI5 from './AI-5.jpg'
+import AI6 from './AI-6.jpg'
 
 export {
+    AI1,
+    AI2,
+    AI3,
+    AI4,
+    AI5,
+    AI6,
     CESLogoWhite,
     CESLogoBlack,
     ces,

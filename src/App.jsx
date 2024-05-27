@@ -21,9 +21,6 @@ function App() {
       <section className="padding">
         <Roadmap />
       </section>
-      <section className="padding bg-pale-blue">
-        <Managers />
-      </section>
       <section className="padding-x sm:py-32 py-16 w-full">
         <Subcribe />
       </section>

@@ -7,27 +7,25 @@ import { ServicesCarousel } from '../components';
 
 const OurServices = () => {
 
-  return (
-    <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container ">
-       <div className='flex-1'>
-        <ServicesCarousel/>
-      </div>
-      <div className="flex flex-col flex-1">
+	return (
+		<section className="justify-center items-center max-container ">
 
-        <h2 className="font-palanquin text-4xl capitalize font-bold  lg:max-w-lg">
-          Your Pathway to Connectivity:
-          <span className="text-[#00309e]  drop-shadow font-bold"> Expert Fiber Network </span>
-          Mapping Services
-        </h2>
-        <p className="p-4 mt-4 info-text drop-shadow text-black">
-        At Coreline Engineering Solutions, we're dedicated to revolutionizing the telecommunications landscape with our innovative services. From designing robust infrastructure to optimizing network performance, we offer a comprehensive suite of solutions tailored to meet the evolving needs of our clients. Our expertise encompasses:</p>       
-        <div>
-          <Drop/>
-        </div>
+			<h3 className="font-palanquin mt-4 m-auto text-center text-4xl font-bold max-w-3xl">
+				Your Pathway to Connectivity:
+				<span className="text-[#00309e] font-bold"> Expert Fiber Network </span>
+				Mapping Services
+			</h3>
+			<p className="text-center mt-4 m-auto info-text max-w-3xl">
+				Coreline Engineering Solutions, we're dedicated to revolutionizing the telecommunications landscape with our innovative services. From designing robust infrastructure to optimizing network performance, we offer a comprehensive suite of solutions tailored to meet the evolving needs of our clients. Our expertise encompasses:
+			</p>
+			<div>
+			</div>
+			<div className="container mx-auto mt-8">
+				<ServicesCarousel />
+			</div>
 
-      </div>
-    </section>
-  )
+		</section>
+	)
 }
 
 export default OurServices
