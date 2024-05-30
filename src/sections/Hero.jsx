@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { arrowRight } from '../assets/icons';
 import { statistics } from '../constants';
-import { CESphoto1, CESphoto2, CESphoto3,CESbuilding,CESteam } from '../assets/images';
+import { CESphoto1, CESphoto2, CESphoto3, CESbuilding, CESteam } from '../assets/images';
 import Button from '../components/Button';
+import { ProgressCardHelp,ProgressCardCable,ProgressCardHouse } from '../components';
 
 const Hero = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = [CESphoto1, CESphoto2, CESphoto3,CESbuilding,CESteam];
+    const images = [CESphoto1, CESphoto2, CESphoto3, CESbuilding, CESteam];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,7 +19,7 @@ const Hero = () => {
 
     return (
         <div className="relative overflow-hidden ">
-            <div className="absolute  inset-0 justify-center items-center">
+            <div className="absolute inset-0 justify-center items-center">
                 {images.map((image, index) => (
                     <img
                         key={index}
@@ -27,7 +28,7 @@ const Hero = () => {
                         alt={`Image ${index + 1}`}
                         style={{
                             backgroundImage: `url(${image})`,
-                            maskImage: 'linear-gradient(to left, transparent, black)',
+                            maskImage: 'linear-gradient(to top, transparent, black)',
                             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
                         }}
                     />
@@ -46,12 +47,9 @@ const Hero = () => {
                     </p>
                     <Button label="Contact us" iconURL={arrowRight} />
                     <div className="flex justify-center items-start flex-wrap w-full mt-16 gap-16">
-                        {statistics.map((stat, index) => (
-                            <div key={index}>
-                                <p className="font-palanquin  text-white font-bold text-[32px]">{stat.value}</p>
-                                <p className="font-palanquin text-white text-[16px]">{stat.label}</p>
-                            </div>
-                        ))}
+                        <ProgressCardHelp />
+                        <ProgressCardCable />
+                        <ProgressCardHouse />
                     </div>
                 </div>
             </div>

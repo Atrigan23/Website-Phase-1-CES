@@ -15,18 +15,10 @@ const CES = ({ isMobile }) => {
         intensity={6}
         castShadow
       />
-      <pointLight intensity={1} position={[0, 10, 10]} />
-      <spotLight
-        position={[-15, -20, 10]}
-        angle={0.3}
-        penumbra={1}
-        intensity={1.5}
-        castShadow
-        shadow-mapSize={1024}
-      />
+
       <primitive
         object={logo.scene}
-        scale={isMobile ? 0.2 : 0.57}// Adjust rotation to tilt downwards
+        scale={isMobile ? 0.3 : 0.50}// Adjust rotation to tilt downwards
         position={isMobile ? [-0.25, 0, -2.2] : [-0.5, 0.25, 0]}
       />
     </mesh>
@@ -69,7 +61,6 @@ const CESCanvas = () => {
       <OrbitControls
         enableZoom={false}
         autoRotate
-
       />
         <CES isMobile={isMobile} />
         <Environment preset="sunset" /> {/* Adds an environment map for realistic lighting */}

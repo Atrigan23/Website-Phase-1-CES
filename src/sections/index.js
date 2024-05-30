@@ -6,6 +6,8 @@ import Managers from "./Managers";
 import Subcribe from "../sections/Subcribe";
 import Footer from "./Footer";
 import Hero from "./Hero";
+import Expierence from "./Expierence";
+
 
 
 
@@ -19,5 +21,6 @@ export {
   Subcribe,
   Footer,
   Hero,
+  Expierence,
 
 };

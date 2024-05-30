@@ -1,10 +1,4 @@
 import { useState } from 'react';
-import SectionNetwork from './SectionNetwork';
-import SectionAdmin from './SectionAdmin';
-import SectionInventory from './SectionInventory';
-import SectionDesign from './SectionDesign';
-import SectionGuidance from './SectionGuidance';
-import SectionField from './SectionField';
 
 const Drop = () => {
 	const [visibleSection, setVisibleSection] = useState(null);

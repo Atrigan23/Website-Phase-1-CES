@@ -1,17 +1,26 @@
 import React from 'react'
 import { services } from '../constants'
 import { ServiceCard } from "../components";
+import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Services = () => {
   return (
-    <section className="max-container flex flex-wrap justify-center gap-9 ">
+    <>
+        <motion.div       variants={fadeIn("up", "spring")}
+          className='max-container flex flex-wrap justify-center gap-9  '>
 
-      {services.map((service,index) => (
-        <ServiceCard key={service.label} index={index}  {...service} />
-      ))}
 
-    </section>
+        {services.map((service, index) => (
+          <ServiceCard key={service.label} index={index}  {...service} />
+        ))}
+
+    </motion.div>
+    	
+</>
+
   )
 }
 
-export default Services
+export default SectionWrapper(Services, "services");

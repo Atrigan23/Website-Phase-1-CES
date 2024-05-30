@@ -1,5 +1,5 @@
-import { facebook, instagram, support, twitter, secure, map, clock,planning,brainstorm,done,execute,monitor,design,} from "../assets/icons";
-import { Levi, Gustav, CESphoto1, CESphoto2, CESphoto3, AI1,AI2,AI3, AI4, AI5} from "../assets/images";
+import { facebook, instagram, support, twitter, secure, map, clock, planning, brainstorm, done, execute, monitor, design, } from "../assets/icons";
+import { Levi, Gustav, CESphoto1, CESphoto2, CESphoto3, AI1, AI2, AI3, AI4, AI5 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -49,13 +49,6 @@ export const managers = [
     }
 ];
 
-export const points = [
-    { id: 1, imgURL: brainstorm, title: 'Brainstorming', description: ' Define Specification need required by the client. Specify the expected outcomes and benefits. Research and document relevant regulations and standards Obtain available data from client Identify potential risks and challenges.' },
-    { id: 2, imgURL: planning, title: 'Planning', description: ' Analyze data Clearly define the scope of work for the fiber design project. Include deliverables and exclusions Define quality standards for the fiber design Finalize Project Deliverables needed by the client' },
-    { id: 3, imgURL: execute, title: 'Launch and Execution', description: 'Define and finalize Commercials Allocate and introduce account manager and team to the client. Define and Finalize Communication Plan  Conduct team orientation and training.' },
-    { id: 4, imgURL: map, title: 'Monitoring and Control', description: 'Quality of deliverables Establish a process for identifying and resolving project constraints. Conduct regular quality inspections. Develop a protocol for handling changes to the project scope.' },
-    { id: 5, imgURL: done, title: 'Project Commencement', description: 'Compile project documentation and ensure its accessible. Plan for a smooth handover to the client’s  Project Management Team Provide training to end-users  Establish ongoing support mechanisms. Conduct a project evaluation and gather feedback. Establish a lessons learned register for future projects.' },
-];
 
 
 export const footerLinks = [
@@ -101,31 +94,84 @@ export const Images = [
 ];
 
 export const ServiceCarousel = [
-    {   title: "Network Design",
+    {
+        title: "Network Design",
         header: "Network Design",
-        description: " Our specialization lies in crafting customized fiber network designs from A to Z, ensuring they align precisely with the requirements and objectives of our clients.",
+        description: "Our specialization lies in crafting customized fiber network designs from A to Z, ensuring they align precisely with the requirements and objectives of our clients.",
         src: CESphoto2,
-      },
-      { title: "Inventory Management",
+    },
+    {
+        title: "Inventory Management",
         header: "Network Inventory Management",
         description: "We are proficient in documenting and capturing the details of fiber network infrastructure, maintaining an accurate and up-to-date inventory for effective management.",
         src: AI2,
-      },
-      { title: "Systems Design",
+    },
+    {
+        title: "Systems Design",
         header: "Software Systems Design and Databases",
         description: "Leveraging our technical proficiency, we design software systems and databases to streamline operations, enhance efficiency, and facilitate seamless data management",
         src: AI3,
-      },
-      { title: "Admin Personnel",
+    },
+    {
+        title: "Admin Personnel",
         header: "Dedicated Admin Personnel",
         description: "Our dedicated admin personnel oversee and coordinate various aspects of project administration to ensure projects are executed smoothly, on time, and within budget.",
         src: AI4,
-      },
-      { title: "Guidance/Supplier",
+    },
+    {
+        title: "Guidance/Supplier",
         header: "Material Guidance and Supplier Advisory",
         description: "Providing valuable insights, we offer guidance on materials and advise on suppliers, ensuring the use of quality materials in the implementation of fiber network projects",
         src: AI5,
-      },
+    },
 
-    
+
 ];
+
+export const points = [
+    { id: 1, imgURL: brainstorm, title: 'Brainstorming', description: ' Define Specification need required by the client. Specify the expected outcomes and benefits. Research and document relevant regulations and standards Obtain available data from client Identify potential risks and challenges.' },
+    { id: 2, imgURL: planning, title: 'Planning', description: ' Analyze data Clearly define the scope of work for the fiber design project. Include deliverables and exclusions Define quality standards for the fiber design Finalize Project Deliverables needed by the client' },
+    { id: 3, imgURL: execute, title: 'Launch and Execution', description: 'Define and finalize Commercials Allocate and introduce account manager and team to the client. Define and Finalize Communication Plan  Conduct team orientation and training.' },
+    { id: 4, imgURL: monitor, title: 'Monitoring and Control', description: 'Quality of deliverables Establish a process for identifying and resolving project constraints. Conduct regular quality inspections. Develop a protocol for handling changes to the project scope.' },
+    { id: 5, imgURL: done, title: 'Project Commencement', description: 'Compile project documentation and ensure its accessible. Plan for a smooth handover to the client’s  Project Management Team Provide training to end-users  Establish ongoing support mechanisms. Conduct a project evaluation and gather feedback. Establish a lessons learned register for future projects.' },
+];
+
+export const experiences = [
+    {
+        title: "Brainstorming",
+        icon: brainstorm ,
+        points: [
+            "Our specialization lies in crafting customized fiber network designs from A to Z, ensuring they align precisely with the requirements and objectives of our clients.",
+        ],
+    },
+    {
+        title: "Planning",
+        icon: planning ,
+        points: [
+            "Analyze data Clearly define the scope of work for the fiber design project. Include deliverables and exclusions Define quality standards for the fiber design Finalize Project Deliverables needed by the client",
+        ],
+    },
+    {
+        title: "Launch and Execution",
+        icon: execute ,
+        points: [
+            "Define and finalize Commercials Allocate and introduce account manager and team to the client. Define and Finalize Communication Plan  Conduct team orientation and training.",
+        ],
+    },
+    {
+        title: "Monitoring and Control",
+        icon: monitor ,
+        points: [
+            "Quality of deliverables Establish a process for identifying and resolving project constraints. Conduct regular quality inspections. Develop a protocol for handling changes to the project scope.",
+        ],
+    },
+    {
+        title: "Project Commencement",
+        icon: done ,
+        points: [
+            "Compile project documentation and ensure its accessible. Plan for a smooth handover to the client’s  Project Management Team Provide training to end-users  Establish ongoing support mechanisms. Conduct a project evaluation and gather feedback. Establish a lessons learned register for future projects.",
+        ],
+    },
+
+];
+

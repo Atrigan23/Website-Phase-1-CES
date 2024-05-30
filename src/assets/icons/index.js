@@ -12,15 +12,12 @@ import hamburger from './hamburger.svg'
 import clock from './clock-00309e.svg';
 import secure from './secure.svg';
 import map from './map-00309e.svg';
-import design from './design-00309e.svg'
-
-
-import planning from './planning.svg'
-import brainstorm from './brainstorm.svg'
-import done from './done.svg'
-import execute from './execute.svg'
-import monitor from './network.svg'
-
+import design from './design-00309e.svg';
+import planning from './planning.svg';
+import brainstorm from './brainstorm.svg';
+import done from './done.svg';
+import execute from './execute.svg';
+import monitor from './monitor.svg';
 
 export {
     design,

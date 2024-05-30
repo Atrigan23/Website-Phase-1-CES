@@ -19,6 +19,7 @@ import AI3 from './AI-3.jpg'
 import AI4 from './AI-4.jpg'
 import AI5 from './AI-5.jpg'
 import AI6 from './AI-6.jpg'
+import herobg from './herobg.png'
 
 export {
     AI1,
@@ -41,4 +42,6 @@ export {
     CESteam,
     Levi,
     Gustav,
+    herobg,
+    
 }

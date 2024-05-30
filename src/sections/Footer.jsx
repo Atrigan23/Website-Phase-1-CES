@@ -6,14 +6,14 @@ const Footer = () => {
   return (
     <footer className='max-container'>
       <div className=' bg-slate-950  flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
-        <div className='m-2 flex flex-col items-start'>
+        <div className='m-2  flex flex-col items-start'>
           <a href='/'>
             <img
               src={ces}
               alt='logo'
               width={150}
-              height={46}
-              className='m-0 p-4 bg-white-400 rounded-full'
+              height={60}
+              className='m-2 p-2 bg-white rounded-3xl'
             />
           </a>
           <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>

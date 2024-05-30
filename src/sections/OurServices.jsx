@@ -4,13 +4,14 @@ import { arrowRight, design } from '../assets/icons';
 import { ces } from '../assets/images';
 import Drop from '../components/Drop';
 import { ServicesCarousel } from '../components';
+import { motion } from "framer-motion";
 
 const OurServices = () => {
 
 	return (
 		<section className="justify-center items-center max-container ">
 
-			<h3 className="font-palanquin mt-4 m-auto text-center text-4xl font-bold max-w-3xl">
+			<h3 className="font-palanquin m-auto text-center text-4xl font-bold max-w-3xl">
 				Your Pathway to Connectivity:
 				<span className="text-[#00309e] font-bold"> Expert Fiber Network </span>
 				Mapping Services

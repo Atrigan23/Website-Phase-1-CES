@@ -10,20 +10,19 @@ const Navbar = () => {
 
 	return (
 		<header className='padding-x py-8 absolute z-10 w-full'>
-			<nav className='flex justify-between items-center px-2 py-2 w-full bg-slate-600 bg-opacity-60 backdrop-filter rounded-full'>
+			<nav className='flex justify-between items-center px-2 py-2 w-full bg-slate-600 backdrop-blur-lg  bg-opacity-60 backdrop-filter rounded-full'>
 				<a href="/">
 					<img className="relative p-2 items-center flex flex-1 justify-center  drop-shadow-xl" src={CESLogoWhite} alt="Logo"
 						width={80} />
 				</a>
 
-				<h1 className="px-6 font-poppins text-white font-bold text-[32px]"></h1>
-				<ul className='flex-1 flex justify-end gap-16 max-lg:hidden'>
+				<ul className='flex-1 flex justify-end px-4 gap-16 max-lg:hidden'>
 
 					{navLinks.map((nav, index) => (
 						<li
 							key={nav.href}
 							className={`p-6 hover:bg-[#00309e] text-white text-[18px] rounded-full mx-2 m-2 cursor-pointer duration-300 hover:text-white font-bold text-center
-					${index === navLinks.length - 1 ? "mr-0" : "mr-10"
+							${index === navLinks.length - 1 ? "mr-0" : "mr-10"
 								} `}
 						>
 							<a href={`${nav.href}`}>{nav.label}</a>

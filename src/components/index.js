@@ -5,14 +5,17 @@ import CarouselTransition from "./CarouselTransition";
 import ServiceCard from "./ServiceCard";
 import ManageCard from "./ManageCard";
 import Drop from "./Drop";
-import DonutChart from "./Charts";
 import Roadmap from "./RoadMap";
 import ServicesCarousel from "./ServicesCarousel";
+import ProgressCardHelp from "./ProgressCardHelp";
+import AnimatedProgressProvider from "./AnimatedProgressProvider";
+import ChangingProgressProvider from "./ChangingProgressProvider";
+import ProgressCardCable from "./ProgressCardCable";
+import ProgressCardHouse from "./ProgressCardHouse";
 
 
 export {
   Roadmap,
-  DonutChart,
   Drop,
   CarouselTransition,
   Services,
@@ -20,5 +23,10 @@ export {
   Subcribe,
   ServiceCard,
   ManageCard,
-  ServicesCarousel
+  ServicesCarousel,
+  ProgressCardHelp,
+  ProgressCardCable,
+  ProgressCardHouse,
+  AnimatedProgressProvider,
+  ChangingProgressProvider,
 };
