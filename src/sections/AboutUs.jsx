@@ -3,31 +3,39 @@ import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
 import { ces } from '../assets/images';
 import { CESCanvas } from '../canvas';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from '../hoc';
 
 const AboutUs = () => {
 
 	const openPDF = () => {
 		window.open('/CES.pdf', '_blank');
-	  };
+	};
 	return (
-		<section id="about" className="flex justify-center max-lg:flex-col gap-10 w-full max-container">
-			<div className="flex flex-col flex-1">
+		<section id="section1" className="flex justify-center max-lg:flex-col gap-10 w-full max-container">
 
-				<div className="bg-gradient-to-r from-[#00309e] to-white rounded-2xl p-2">
-					<h2 className="font-palanquin text-white  text-4xl capitalize font-bold lg:max-w-lg">
-						<span className=" drop-shadow font-bold">Mapping Tomorrow's Connections Today </span>
-					</h2>
-				</div>
-				<p className="p-4 mt-4 info-text font-montserrat text-black text-lg leading-7">
-					At Coreline Engineering Solutions, our commitment to excellence is underscored by our key highlights: We specialize in delivering expert design services that not only set industry benchmarks but also drive innovation within the telecommunications landscape. With our roots firmly grounded in South Africa, our unique and diverse perspective enriches our approach to global telecommunications challenges. Our solutions have a far-reaching impact, connecting local communities and international businesses alike, fostering growth and connectivity. Our legacy of success positions us as industry leaders, consistently delivering cutting-edge solutions that propel telecommunications into the future. As we invite you to engage with our team, explore collaborative opportunities, and witness the transformative impact of our forward-thinking design services, we collectively embark on the mission to build a connected future where innovation knows no bounds and communities thrive on the power of seamless connectivity.
-				</p>
-				<div className="mt-11">
-					<Button 
-					onClick={openPDF}
-					label="Learn More" iconURL={arrowRight} />
+			<motion.div variants={fadeIn("right", "spring")}>
+				<div className="flex flex-col flex-1">
+
+					<div className="bg-gradient-to-r from-[#00309e] to-white rounded-2xl p-2">
+						<h2 className="font-palanquin text-white  text-4xl capitalize font-bold lg:max-w-lg">
+							<span className=" drop-shadow font-bold">Mapping Tomorrow's Connections Today </span>
+						</h2>
+					</div>
+					<p className="p-4 mt-4 info-text font-montserrat text-black text-lg leading-7">
+						At Coreline Engineering Solutions, our commitment to excellence is underscored by our key highlights: We specialize in delivering expert design services that not only set industry benchmarks but also drive innovation within the telecommunications landscape. With our roots firmly grounded in South Africa, our unique and diverse perspective enriches our approach to global telecommunications challenges. Our solutions have a far-reaching impact, connecting local communities and international businesses alike, fostering growth and connectivity. Our legacy of success positions us as industry leaders, consistently delivering cutting-edge solutions that propel telecommunications into the future. As we invite you to engage with our team, explore collaborative opportunities, and witness the transformative impact of our forward-thinking design services, we collectively embark on the mission to build a connected future where innovation knows no bounds and communities thrive on the power of seamless connectivity.
+					</p>
+					<div className="mt-11">
+						<Button
+							onClick={openPDF}
+							label="Learn More" iconURL={arrowRight} />
+					</div>
+
 				</div>
 
-			</div>
+			</motion.div>
+
 			<div className="relative items-center flex flex-1 flex-col  justify-center drop-shadow-xl" >
 				<div className=" flex flex-1 flex-col w-[600px]">
 					<CESCanvas />
@@ -42,4 +50,4 @@ const AboutUs = () => {
 
 }
 
-export default AboutUs
+export default SectionWrapper(AboutUs, "about")

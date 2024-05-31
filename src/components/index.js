@@ -12,6 +12,7 @@ import AnimatedProgressProvider from "./AnimatedProgressProvider";
 import ChangingProgressProvider from "./ChangingProgressProvider";
 import ProgressCardCable from "./ProgressCardCable";
 import ProgressCardHouse from "./ProgressCardHouse";
+import Loader from "./WebLoader";
 
 export {
   Roadmap,
@@ -28,4 +29,5 @@ export {
   ProgressCardHouse,
   AnimatedProgressProvider,
   ChangingProgressProvider,
+  Loader,
 };
