@@ -2,11 +2,10 @@ import { facebook, instagram, support, twitter, secure, map, clock, planning, br
 import { Levi, Gustav, CESphoto1, CESphoto2, CESphoto3, AI1, AI2, AI3, AI4, AI5 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#contact-us", label: "Contact Us" },
-    { href: "#Services", label: "Services" },
-    { href: "#Client", label: "Client" },
+    { href: "#about", label: "About Us" },
+    { href: "#contact", label: "Contact Us" },
+    { href: "#services", label: "Services" },
+    { href: "#client", label: "Client" },
 ];
 
 

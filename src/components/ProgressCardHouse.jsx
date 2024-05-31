@@ -6,7 +6,7 @@ import { easeQuadInOut } from "d3-ease";
 import ChangingProgressProvider from "./ChangingProgressProvider";
 const ProgressCardHouse = () => {
 
-    const percentage = 66;
+    const percentage = 65;
     return (
         <div className="max-container gap-2" style={{ width: 100, height: 150 }}>
             <CircularProgressbar

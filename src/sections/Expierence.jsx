@@ -14,6 +14,7 @@ import { herobg } from "../assets/images";
 const ExperienceCard = ({ experience }) => {
 	return (
 		<VerticalTimelineElement
+			
 			contentStyle={{
 				background: "#00309e",
 				color: "#fff",
@@ -56,7 +57,7 @@ const Experience = () => {
 		<>
 			<motion.div variants={textVariant()}>
 
-				<h2 className={`font-palanquin text-4xl font-bold  text-[#00309e] text-center`}>
+				<h2 id='client' className={`font-palanquin text-4xl font-bold  text-[#00309e] text-center`}>
 					Client Overview
 				</h2>
 				<p className={`${styles.sectionSubText} text-center info-text`}>

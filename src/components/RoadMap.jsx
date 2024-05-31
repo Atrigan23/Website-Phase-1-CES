@@ -5,7 +5,7 @@ const Roadmap = () => {
     const [hoveredPoint, setHoveredPoint] = useState(null);
 
     return (
-        <div className="relative flex sm: flex-col items-center max-container mb-24">
+        <div  className="relative flex sm: flex-col items-center max-container mb-24">
             <h2 className="font-bold items-center font-palanquin text-4xl capitalize lg:max-w-lg">
                 <span className="text-[#00309e] drop-shadow font-bold">Client</span> Onboarding
             </h2>

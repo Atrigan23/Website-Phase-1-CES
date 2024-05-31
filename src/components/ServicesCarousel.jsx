@@ -23,62 +23,38 @@ const Tabs = () => {
 		}
 	}, [isPaused]);
 
-	const handlePrev = () => {
-		setFadeState('opacity-0 transform scale-95');
-		setTimeout(() => {
-			setActiveTab((prevIndex) => (prevIndex === 0 ? ServiceCarousel.length - 1 : prevIndex - 1));
-			setFadeState('opacity-100 transform scale-100');
-			setIsPaused(true);
-			resetPause();
-		}, 500);
-	};
-
-	const handleNext = () => {
-		setFadeState('opacity-0 transform scale-95');
-		setTimeout(() => {
-			setActiveTab((prevIndex) => (prevIndex === ServiceCarousel.length - 1 ? 0 : prevIndex + 1));
-			setFadeState('opacity-100 transform scale-100');
-			setIsPaused(true);
-			resetPause();
-		}, 500);
-	};
-
 	const handleTabClick = (index) => {
 		setFadeState('opacity-0 transform scale-95');
 		setTimeout(() => {
 			setActiveTab(index);
 			setFadeState('opacity-100 transform scale-100');
 			setIsPaused(true);
-			resetPause();
+			setTimeout(() => setIsPaused(false), 10000); // Pause for 10 seconds
 		}, 500);
 	};
 
-	const resetPause = () => {
-		setIsPaused(false);
-	};
-
 	return (
-		<section className="flex justify-center flex-col items-center h-[700px] w-[1400px] mx-auto">
-			<div className="flex justify-center space-x-4 gap-9 my-4">
+		<section className="flex flex-col items-center h-auto w-full mx-auto p-4 lg:p-8">
+			<div className="flex justify-center space-x-2 lg:space-x-4 gap-2 lg:gap-9 my-4 flex-wrap">
 				{ServiceCarousel.map((item, index) => (
 					<button
 						key={index}
 						onClick={() => handleTabClick(index)}
-						className={`px-4 py-2 rounded-full ${index === activeTab ? 'bg-[#3b82f6] text-white transform transition duration-500 scale-125' : 'bg-[#00309e] text-white'}`}>
+						className={`px-2 py-1 lg:px-4 lg:py-2 rounded-full ${index === activeTab ? 'bg-[#3b82f6] text-white transform transition duration-500 scale-125' : 'bg-[#00309e] text-white'}`}>
 						{item.title}
 					</button>
 				))}
 			</div>
-			<div className="relative w-full h-full">
+			<div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
 				<div className={`transition-all duration-500 ease-in-out ${fadeState} overflow-hidden w-full h-full flex justify-center items-center relative`}>
 					<img
 						src={ServiceCarousel[activeTab].src}
 						alt={ServiceCarousel[activeTab].title}
 						className="w-full h-full object-cover"
 					/>
-					<div className="absolute bottom-4  mx-6 text-white text-center p-8 bg-[#00309e] backdrop-blur-lg bg-opacity-70 backdrop-filter w-full rounded-[20px] shadow-3xl px-10 flex-col">
-						<h2 className="text-4xl font-bold mb-2">{ServiceCarousel[activeTab].header}</h2>
-						<p className="text-2xl">{ServiceCarousel[activeTab].description}</p>
+					<div className="absolute bottom-4 left-4 right-4 text-white text-center p-4 lg:p-8 bg-[#00309e] backdrop-blur-lg bg-opacity-70 backdrop-filter rounded-[10px] lg:rounded-[20px] shadow-3xl flex-col">
+						<h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">{ServiceCarousel[activeTab].header}</h2>
+						<p className="text-sm sm:text-lg md:text-xl lg:text-2xl">{ServiceCarousel[activeTab].description}</p>
 					</div>
 				</div>
 			</div>
