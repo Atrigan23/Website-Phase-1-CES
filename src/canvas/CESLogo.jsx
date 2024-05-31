@@ -5,7 +5,10 @@ import CanvasLoader from '../components/Loader';
 import * as THREE from 'three';
 
 const CES = ({ isMobile }) => {
-  const  logo  = useGLTF('../Logo/6.gltf');
+  const basePath = import.meta.env.BASE_URL || '';
+  const logoPath = `${basePath}Logo/6.gltf`;
+  const logo = useGLTF(logoPath);
+  
   return (
     <mesh>
       <ambientLight intensity={0.0} /> {/* Soft overall lighting */}
